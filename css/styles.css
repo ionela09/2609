@@ -550,23 +550,60 @@ nav ul li a{
     }
 }
 
-/* --- SMALL TABLET / LARGE PHONES (under 768px) --- */
+
+
+/* Rules for tablet and mobile screens below 768px */
 @media screen and (max-width: 768px) {
+    
+    /* 1. Navigation bar stacks vertically */
     nav {
         flex-direction: column;
         gap: 15px;
+        padding: 15px 10px;
         text-align: center;
     }
 
-    nav div a {
-        margin-left: 0;
+    nav ul {
+        flex-direction: column;
+        gap: 10px;
+        padding: 0;
     }
 
-    nav ul li a {
-        margin-right: 0;
+    nav div a, nav ul li a {
+        margin: 0;
     }
 
-    /* Hero & About Layout switch to column */
+    /* 2. CV Page Fix: Stack sidebar on top of main content */
+    .cv_container {
+        flex-direction: column !important;
+        width: 100% !important;
+    }
+
+    .sidebar {
+        width: 100% !important;
+        box-sizing: border-box;
+        padding: 20px;
+    }
+
+    .main_content {
+        width: 100% !important;
+        box-sizing: border-box;
+        padding: 20px 15px;
+    }
+
+    /* 3. Contact grid & skills grid responsive fix */
+    .contact_grid, .skills_grid {
+        grid-template-columns: 1fr !important; /* Single column layout for small screens */
+        gap: 8px;
+    }
+
+    .criterium {
+        margin-top: 10px;
+        border-bottom: 1px dashed #c89bd2;
+        padding-bottom: 2px;
+    }
+
+    /* 4. Digital CV & About Me layout adjustments */
     .digital_cv, .me {
         flex-direction: column;
         text-align: center;
@@ -574,10 +611,12 @@ nav ul li a{
 
     .images {
         width: 60%;
+        margin: 0 auto;
     }
 
-    .my_name {
-        font-size: 2.2rem;
+    .my_name, .name {
+        font-size: 2rem !important;
+        margin-right: 0 !important;
     }
 
     .cv_email_buttons, .badges, .social_icons {
@@ -585,63 +624,27 @@ nav ul li a{
     }
 
     .quick_stats {
-        flex-direction: row;
-        flex-wrap: wrap;
-    }
-
-    /* CV Layout switch to stacked layout */
-    .cv_container {
         flex-direction: column;
     }
 
-    .sidebar, .main_content {
-        width: 100%;
-    }
-
-    .sidebar .prof_im img {
-        max-width: 200px;
-        margin: 0 auto;
+    /* 5. Portfolio Grid converts to 1 column */
+    .portfolio_grid {
+        grid-template-columns: 1fr !important;
     }
 }
 
-/* --- MOBILE PHONES (375px and less) --- */
+/* Specific rules for narrow phone screens (e.g., 375px) */
 @media screen and (max-width: 375px) {
     body {
         padding: 0;
     }
 
-    nav ul {
-        flex-direction: column;
-        gap: 10px;
-    }
-
-    .my_name {
-        font-size: 1.8rem;
-    }
-
-    .images {
-        width: 80%;
-    }
-
     .cv_email_buttons {
         flex-direction: column;
-        width: 100%;
     }
 
     .first_button, .second_button {
-        text-align: center;
         display: block;
-    }
-
-    .quick_stats {
-        flex-direction: column;
-    }
-
-    .portfolio_grid {
-        grid-template-columns: 1fr; /* a single column on phones */
-    }
-
-    .contact_grid, .skills_grid {
-        grid-template-columns: 1fr; /* Etichetele și valorile devin stivuite */
+        text-align: center;
     }
 }
