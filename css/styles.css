@@ -556,21 +556,68 @@ nav ul li a{
 @media screen and (max-width: 768px) {
     
     /* 1. Navigation bar stacks vertically */
+    /* Compact top navigation bar layout */
     nav {
         flex-direction: column;
-        gap: 15px;
-        padding: 15px 10px;
+        align-items: center;
+        justify-content: center;
+        padding: 10px 15px;
+        margin-bottom: 20px;
+        border-radius: 0 0 12px 12px;
+        background-color: rgb(100, 57, 114); /* Darker purple for better contrast */
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+    }
+
+    /* Brand title styling on mobile */
+    nav div a {
+        font-size: 1.1rem;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        margin-left: 0;
+        display: inline-block;
+        margin-bottom: 8px;
+        color: #ffffff;
+    }
+
+    /* Horizontal pill menu for navigation links */
+    nav ul {
+        display: flex;
+        flex-direction: row; /* Keeps items on a single horizontal line */
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        gap: 8px;
+        padding: 0;
+        margin: 0;
+    }
+
+    nav ul li {
+        flex: 1;
         text-align: center;
     }
 
-    nav ul {
-        flex-direction: column;
-        gap: 10px;
-        padding: 0;
+    /* Pill-shaped button style for navigation items */
+    nav ul li a {
+        display: block;
+        padding: 8px 12px;
+        font-size: 0.85rem;
+        font-weight: bold;
+        color: #e7d9ee;
+        background-color: rgba(255, 255, 255, 0.15);
+        border-radius: 20px;
+        text-decoration: none;
+        margin-right: 0;
+        transition: background-color 0.2s ease, color 0.2s ease;
     }
 
-    nav div a, nav ul li a {
-        margin: 0;
+    /* Active link style on mobile */
+    .about_page nav ul li:first-child a,
+    .cv_page nav ul li:nth-child(2) a,
+    .portfolio_page nav ul li:nth-child(3) a {
+        background-color: #d7a4f0;
+        color: #481053;
+        font-size: 0.85rem;
+        border-bottom: none; /* Removes desktop line indicator */
     }
 
     /* 2. CV Page Fix: Stack sidebar on top of main content */
