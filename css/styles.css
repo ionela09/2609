@@ -686,16 +686,67 @@ nav ul li a{
 
 /* Specific rules for narrow phone screens (e.g., 375px) */
 @media screen and (max-width: 375px) {
+    
+    /* Reset page padding for tight mobile screens */
     body {
         padding: 0;
     }
 
+    .all_info, .digital_cv, .cv_container, .portfolio {
+        padding: 10px;
+    }
+
+    /* Compact header text size */
+    .my_name, .name {
+        font-size: 1.6rem !important;
+    }
+
+    .my_subtitle {
+        font-size: 1rem;
+    }
+
+    /* Full-width action buttons stacked vertically */
     .cv_email_buttons {
         flex-direction: column;
+        width: 100%;
+        gap: 10px;
     }
 
     .first_button, .second_button {
         display: block;
         text-align: center;
+        width: 100%;
+        box-sizing: border-box;
+        padding: 10px;
+    }
+
+    /* Image sizing adjustment for small screens */
+    .images {
+        width: 80%;
+    }
+
+    .sidebar .prof_im img {
+        max-width: 160px;
+        margin: 0 auto;
+    }
+
+    /* Smaller pill links in navigation to fit 375px width */
+    nav ul li a {
+        font-size: 0.75rem;
+        padding: 6px 8px;
+    }
+
+    /* Contact and Skills grid elements optimization */
+    .contact_grid, .skills_grid {
+        padding: 10px;
+        font-size: 13px;
+    }
+
+    .stat_card {
+        padding: 10px;
+    }
+
+    .stat_card h3 {
+        font-size: 1.2rem;
     }
 }
