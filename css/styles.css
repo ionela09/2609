@@ -678,6 +678,10 @@ nav ul li a{
     .portfolio_grid {
         grid-template-columns: 1fr !important;
     }
+
+    .sidebar .desktop-only {
+        display: none;
+    }
 }
 
 /* Specific rules for narrow phone screens (e.g., 375px) */
