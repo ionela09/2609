@@ -1,0 +1,647 @@
+/* The body for all the pages */
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.6;
+    color: rgb(32, 24, 43);
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: rgb(237, 214, 241);
+}
+
+/* Navigation bar for all the pages */
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 0;
+    margin-bottom: 25px;
+    border-bottom: 2px solid rgb(100, 57, 114);
+    background-color: rgb(142, 99, 151);   
+}
+
+/* Navigation bar for all the pages */
+nav div a {
+    text-decoration: none;
+    font-size: 1.3rem;
+    font-weight: bold;
+    color: #d7a4f0;
+    margin-left: 3rem;
+}
+
+/* Navigation bar for all the pages */
+nav ul{
+    display: flex;
+    list-style: none;
+    gap: 20px;
+}
+ 
+/* Navigation bar for all the pages */
+nav ul li a{
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: bold;
+    color: #e7d9ee;
+    margin-right: 3rem;
+}
+
+/* Profile image for Digital CV, About Me and CV pages */
+.images {
+    width: 25%;
+    display: flex;
+}
+
+.images img {
+    width: 100%;
+    height: auto;
+    border: 3px solid rgb(72, 16, 83);
+    display: block;
+}
+
+
+
+
+
+/* DIGITAL CV */
+/* Main hero layout container using Flexbox for two-column presentation */
+.digital_cv {
+    max-width: 1024px; /* Limits page content width on wide screens */
+    margin: 0 auto; /* Centers the container horizontally on the viewport */
+    display: flex; /* Aligns profile photo and text content side-by-side */
+    align-items: center; /* Vertically centers children within the section */
+    gap: 40px; /* Sets horizontal spacing of 40 px between image and content */
+    padding: 20px; /* Inner spacing to prevent touching screen edges */
+}
+
+/* Flexible text column taking up remaining horizontal space */
+.little_content {
+    flex: 1;
+}
+
+/* Primary heading styling */
+.my_name {
+    font-size: 3.5rem;
+    color: #481053; /* Primary theme color (deep purple) */
+    margin-bottom: 5px;
+}
+
+/* Subtitle / Role styling */
+.my_subtitle {
+    font-size: 1.3rem;
+    color: #6d3d6d; /* Secondary accent purple color */
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+/* Action buttons wrapper using Flexbox */
+.cv_email_buttons {
+    display: flex;
+    gap: 15px; /* Space between the two Call-To-Action buttons */
+    margin: 25px 0;
+}
+
+/* Primary Call-To-Action button style (Solid background) */
+.first_button {
+    background-color: #481053;
+    color: #ffffff;
+    padding: 12px 24px;
+    border-radius: 6px;
+    text-decoration: none; /* Removes default hyperlink underline */
+    font-weight: bold;
+}
+
+/* Secondary Call-To-Action button style (Outlined variant) */
+.second_button {
+    border: 2px solid #481053;
+    color: #481053;
+    padding: 10px 22px;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* Social icons dimensions maintain proportions automatically */
+.github {
+    width: 40px;
+    height: auto;
+}
+
+.email {
+    width: 40px;
+    height: auto; 
+}
+
+/* Technology skill badges container with automatic line wrapping */
+.badges {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap; /* Allows badges to wrap onto a new line on smaller screens */
+    margin: 15px 0;
+}
+
+/* Individual skill badge chip styling */
+.badge {
+    background-color: #dabae0; /* Light purple tag background */
+    color: #481053;
+    font-weight: bold;
+    font-size: 0.85rem;
+    padding: 6px 14px;
+    border-radius: 20px; /* Creates rounded pill-shaped badges */
+    border: 1px solid #c89bd2;
+}
+
+/* Quick Statistics Grid/Flex section */
+.quick_stats {
+    display: flex;
+    gap: 15px;
+    margin-top: 25px;
+}
+
+/* Individual statistic card element */
+.stat_card {
+    background-color: rgba(255, 255, 255, 0.4); /* Translucent white background */
+    border: 1px solid #d0a3d9;
+    padding: 12px 20px;
+    border-radius: 10px;
+    text-align: center;
+    flex: 1; /* Ensures all stat cards take equal width */
+    backdrop-filter: blur(5px); /* Modern frosted-glass (glassmorphism) effect */
+}
+
+/* Stat card number headline */
+.stat_card h2 {
+    margin: 0;
+    color: #481053;
+    font-size: 1.4rem;
+}
+
+/* Stat card descriptor label */
+.stat_card p {
+    margin: 0;
+    font-size: 0.8rem;
+    color: #333;
+}
+
+
+
+
+
+/* ABOUT ME PAGE*/
+
+.me {
+    display: flex;
+    align-items: center; /* Vertically aligns image and text */
+    padding: 15px;
+    margin-bottom: 25px;
+    border-bottom: 2px solid rgb(227, 182, 242); /* Accent border under the header section */
+    background-color: rgb(218, 186, 224); /* Soft purple banner background */
+}
+
+.name {
+    flex: 1; /* Fills the remaining horizontal space in the flex container */
+    text-align: center; /* Horizontally centers the text inside its flex space */
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 6rem; 
+    font-weight: bold;
+    margin-right: 5rem; /* Offsets text slightly to balance visual weight */
+}
+
+.all_info {
+    max-width: 1024px; /* Prevents content from over-expanding on wide displays */
+    margin: 0 auto; /* Horizontally centers the entire page content */
+    padding: 10px 20px 40px 20px;
+    box-sizing: border-box; /* Includes padding within the total calculated width */
+}
+
+.about_page nav div a {
+    font-weight: bold;
+    color: #e1c4ef;
+    margin-left: 3rem;
+}
+
+.about_page nav div a {
+    font-size: 1rem;
+    color: #e7d9ee; 
+}
+
+.about_page nav ul li:first-child a {
+    font-size: 1.3rem; /* Slightly larger font to signal current active page */
+    color: #d7a4f0; /* Distinct color highlight */
+}
+
+.underlined {
+    display: inline-block; /* Shrinks box to text width so the border matches word length */
+    padding-bottom: 5px;
+    margin-bottom: 25px;
+    border-bottom: 2px solid rgb(50, 3, 46); /* Dark purple bottom border accent */
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    font-size: 1.4rem;
+}
+
+.short_info {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.2rem;
+}
+
+.icons {
+    display: flex;
+    justify-content: center; /* Horizontally centers the icon on the line */
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.icons img {
+    width: 10%; /* Scales dynamically with parent container width */
+    height: auto; /* Maintains original aspect ratio */
+}
+
+
+
+
+/* CV PAGE */
+
+.cv_page nav div a {
+    font-weight: bold;
+    color: #e1c4ef;
+    margin-left: 3rem;
+}
+
+.cv_page nav div a {
+    font-size: 1rem;
+    color: #e7d9ee; 
+}
+
+.cv_page nav ul li:nth-child(2) a{
+    font-size: 1.3rem; /* Slightly larger font to signal current active page */
+    color: #d7a4f0; /* Distinct color highlight */
+}
+
+/* Profile image wrapper inside the sidebar */
+.cv_container .sidebar .prof_im {
+    width: 100%;
+    display: flex;
+}
+
+/* Profile image formatting with accent border */
+.cv_container .sidebar .prof_im img {
+    width: 100%;
+    height: auto;
+    border: 3px solid rgb(72, 16, 83); /* Dark purple frame around profile picture */
+    display: block;
+}
+
+/* Main container using Flexbox to structure the two-column page layout */
+.cv_container {
+    display: flex; /* Creates side-by-side layout for sidebar and main content */
+    min-height: 100vh; /* Ensures full viewport height coverage */
+    font-family: Arial, sans-serif;
+    max-width: 1024px; /* Restricts maximum container width for desktop displays */
+    margin: 0 auto; /* Centers the container horizontally */
+}
+
+/* Darker left sidebar column */
+.sidebar {
+    width: 35%; /* Occupies 35% of total width for sidebar layout */
+    background-color: #6d3d6d; /* Secondary dark purple theme background */
+    color: #ffffff; /* White text color for high contrast */
+    padding: 30px 20px;
+    box-sizing: border-box; /* Includes padding within calculated width */
+}
+
+/* Light main content column */
+.main_content {
+    width: 65%; /* Occupies remaining 65% width for primary content */
+    background-color: #eee3f1; /* Soft light purple background color */
+    color: #333333; /* Dark grey readable text */
+    padding: 30px;
+    box-sizing: border-box;
+}
+
+/* Sidebar heading underline separator */
+.sidebar h2 {
+    border-bottom: 1px solid #777777;
+    padding-bottom: 5px;
+}
+
+/* Hyperlinks within sidebar */
+.cv_container .sidebar a {
+    color: rgb(229, 202, 236); /* Soft purple link color for contrast on dark background */
+}
+
+/* Contact information block styled with CSS Grid */
+.contact_grid {
+    display: grid; /* Uses CSS Grid for alignment of key-value pairs */
+    grid-template-columns: auto 1fr; /* Label column auto-fits, content column takes remaining space */
+    gap: 10px 16px; /* Row and column gap spacing */
+    align-items: center; /* Vertically centers items within grid cells */
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+    max-width: 400px;
+    padding: 15px;
+    background-color: #e3bee9; /* Soft purple card background */
+    border-radius: 8px; /* Rounded corners for card design */
+}
+
+/* Contact label bold formatting */
+.contact_grid .label {
+    font-weight: bold;
+    color: #333333;
+}
+
+/* Contact value text styling */
+.contact_grid .value {
+    color: #555555;
+}
+
+/* Contact links formatting */
+.contact_grid .value a {
+    color: #326da9;
+    text-decoration: none; /* Removes default hyperlink underline */
+    font-style: italic;
+}
+
+/* Hover state interaction for contact links */
+.contact_grid .value a:hover {
+    text-decoration: underline; /* Underlines link when hovered for feedback */
+}
+
+/* Section title header combining icon and text */
+.title {
+    display: flex; /* Places mini icon and section title side-by-side */
+    align-items: center; /* Vertically aligns icon with heading text */
+    gap: 10px; /* Spacing between icon and title text */
+    border-bottom: 1px solid #777777; /* Divider line below section title */
+    padding-bottom: 5px;
+    margin-bottom: 15px;
+}
+
+/* Mini icon dimensions for section titles */
+.title img {
+    width: 40px;
+    height: 40px;
+    object-fit: contain; /* Preserves icon aspect ratio without stretching */
+}
+
+/* Technical skills block styled with CSS Grid */
+.skills_grid {
+    display: grid; /* CSS Grid for key-value skill classification */
+    grid-template-columns: auto 1fr; /* Category column auto-fits, details expand */
+    gap: 10px 16px;
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+    max-width: 100%;
+    padding: 15px;
+    background-color: #e3bee9;
+    border-radius: 8px;
+}
+
+/* Skill category titles */
+.criterium {
+    font-weight: bold;
+}
+
+
+
+
+
+/* PORTFOLIO PAGE */
+
+.portfolio_page nav div a {
+    font-weight: bold;
+    color: #e1c4ef;
+    margin-left: 3rem;
+}
+
+.portfolio_page nav div a {
+    font-size: 1rem;
+    color: #e7d9ee; 
+}
+
+.portfolio_page nav ul li:nth-child(3) a{
+    font-size: 1.3rem; /* Slightly larger font to signal current active page */
+    color: #d7a4f0; /* Distinct color highlight */
+}
+
+/* Main layout wrapper constraining maximum portfolio width */
+.portfolio {
+    max-width: 1024px; /* Prevents grid expansion on ultra-wide screens */
+    margin: 0 auto; /* Horizontally centers main block on viewport */
+    padding: 10px 20px 40px 20px;
+    box-sizing: border-box; /* Includes padding inside width calculation */
+}
+
+/* Page heading style */
+.portfolio_title {
+    text-align: center; /* Horizontally centers title text */
+    font-size: 2.2rem;
+    font-weight: bold;
+    color: #481053; /* Primary dark purple theme color */
+    letter-spacing: 2px; /* Adds tracking between letters for emphasis */
+    margin-bottom: 30px;
+}
+
+/* Grid layout displaying project cards in 3 equal columns */
+.portfolio_grid {
+    display: grid; /* CSS Grid for card layout structure */
+    grid-template-columns: repeat(3, 1fr); /* Creates 3 columns of equal width */
+    gap: 24px; /* Uniform spacing between grid items */
+    margin-bottom: 40px;
+}
+
+/* Individual project card formatting */
+.project {
+    background-color: #ffffff;
+    border: 1px solid #d4c1db; /* Light purple border frame */
+    border-radius: 12px; /* Rounded card corners */
+    overflow: hidden; /* Clips thumbnail overflow to match rounded border */
+    display: flex;
+    flex-direction: column; /* Stacks thumbnail and details vertically */
+    justify-content: space-between; /* Distributes card contents evenly */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.06); /* Subtle elevation drop shadow */
+    transition: transform 0.2s ease, box-shadow 0.2s ease; /* Smooth card animation on hover */
+}
+
+/* Interactive card hover elevation state */
+.project:hover {
+    transform: translateY(-4px); /* Slightly lifts card upwards */
+    box-shadow: 0 8px 18px rgba(72, 16, 83, 0.15); /* Deepens purple-tinted drop shadow on hover */
+}
+
+/* Project image wrapper box */
+.project_image {
+    width: 100%;
+    height: 160px; /* Fixed height for consistent image ratio across cards */
+    background-color: #d1bddb; /* Fallback background color before image loads */
+    overflow: hidden;
+}
+
+/* Image scaling inside thumbnail frame */
+.project_image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Crops image proportionally to fill thumbnail frame */
+}
+
+/* Card details text container */
+.project_info {
+    padding: 16px 16px 8px 16px;
+    flex-grow: 1; /* Fills remaining vertical card space */
+}
+
+/* Project title inside card */
+.project_info h2 {
+    margin: 0 0 10px 0;
+    font-size: 1.05rem;
+    color: #20182b;
+    font-weight: bold;
+    line-height: 1.3;
+}
+
+/* Short description paragraph inside card */
+.project_info p {
+    margin: 0;
+    font-size: 0.88rem;
+    color: #555555;
+    line-height: 1.4;
+}
+
+/* Outer button alignment container */
+.button_more {
+    text-align: center; /* Centers call-to-action button horizontally */
+    margin-top: 20px;
+}
+
+/* Secondary Outlined Action Button */
+.button {
+    display: inline-block;
+    padding: 12px 28px;
+    background-color: transparent;
+    color: #781b8b;
+    border: 2px solid #481053; /* Dark purple outlined border */
+    border-radius: 6px;
+    font-weight: bold;
+    font-size: 0.95rem;
+    text-decoration: none; /* Removes underline from link */
+    letter-spacing: 1px;
+    transition: background-color 0.2s ease, color 0.2s ease; /* Smooth hover state transition */
+}
+
+/* Interactive hover state for Action Button */
+.button:hover {
+    background-color: #481053; /* Inverts background color to solid purple on hover */
+    color: #ffffff; /* Changes text color to white for contrast */
+}
+
+/* Card anchor tag wrapper style */
+.project_links {
+    text-decoration: none; /* Removes default underline from entire card link */
+}
+
+
+/* --- TABLET SCREEN (ecrane sub 1024px) --- */
+@media screen and (max-width: 1024px) {
+    .portfolio_grid {
+        grid-template-columns: repeat(2, 1fr); /* Trecem la 2 coloane pentru proiecte */
+    }
+
+    .name {
+        font-size: 2.5rem;
+    }
+}
+
+/* --- SMALL TABLET / LARGE PHONES (ecrane sub 768px) --- */
+@media screen and (max-width: 768px) {
+    nav {
+        flex-direction: column;
+        gap: 15px;
+        text-align: center;
+    }
+
+    nav div a {
+        margin-left: 0;
+    }
+
+    nav ul li a {
+        margin-right: 0;
+    }
+
+    /* Hero & About Layout switch to column */
+    .digital_cv, .me {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .images {
+        width: 60%;
+    }
+
+    .my_name {
+        font-size: 2.2rem;
+    }
+
+    .cv_email_buttons, .badges, .social_icons {
+        justify-content: center;
+    }
+
+    .quick_stats {
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    /* CV Layout switch to stacked layout */
+    .cv_container {
+        flex-direction: column;
+    }
+
+    .sidebar, .main_content {
+        width: 100%;
+    }
+
+    .sidebar .prof_im img {
+        max-width: 200px;
+        margin: 0 auto;
+    }
+}
+
+/* --- MOBILE PHONES (ecrane de 375px și mai mici) --- */
+@media screen and (max-width: 375px) {
+    body {
+        padding: 0;
+    }
+
+    nav ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .my_name {
+        font-size: 1.8rem;
+    }
+
+    .images {
+        width: 80%;
+    }
+
+    .cv_email_buttons {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .first_button, .second_button {
+        text-align: center;
+        display: block;
+    }
+
+    .quick_stats {
+        flex-direction: column;
+    }
+
+    .portfolio_grid {
+        grid-template-columns: 1fr; /* a single column on phones */
+    }
+
+    .contact_grid, .skills_grid {
+        grid-template-columns: 1fr; /* Etichetele și valorile devin stivuite */
+    }
+}
